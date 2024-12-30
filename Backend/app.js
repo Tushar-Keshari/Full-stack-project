@@ -3,6 +3,7 @@ dotenv.config();
 const cors = require('cors');
 const express = require('express');
 const userRoutes = require('./routes/user.routes');
+const captianRoutes = require('./routes/captain.routes');
 const cookieParser = require('cookie-parser');
 
 
@@ -28,6 +29,8 @@ app.get('/', (req, res) => {
 });
 
 app.use('/users', userRoutes);
+app.use('/captains', captianRoutes);
+
 
 module.exports = mongoose;
 module.exports = app;
