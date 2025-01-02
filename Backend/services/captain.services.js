@@ -25,6 +25,7 @@ module.exports.createCaptain = async({firstname, lastname, email, password,
         }
     });
 
+    console.log(captain);
     return captain;
 }
 
